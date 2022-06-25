@@ -1,0 +1,123 @@
+:root{
+    /*PRIMARY*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /*NEUTRAL*/
+    --very-dark-blue--main: hsl(217, 54%, 11%);
+    --very-dark-blue--card: hsl(216, 50%, 16%);
+    --very-dark-blue--line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: var(--very-dark-blue--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.nft-name{
+    color: var(--white);
+    font-weight: 600;
+}
+.nft-name:hover{
+    color: var(--cyan);
+}
+p{
+    font-size: 15px;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+.card-wrapper{
+    max-width: 300px;
+    background-color: var(--very-dark-blue--card);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.nft-container{
+    position: relative;
+}
+.nft{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.nft-container:hover .overlay{
+    opacity: 1;
+}
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nft-info{
+    line-height: 2;
+    margin-right: 2rem;
+    border-bottom: 1px solid var(--very-dark-blue--line);
+    margin: 1rem 0;
+}
+.price-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.price{
+    color: var(--cyan);
+    font: 300;
+    display: flex;
+    align-items: center;
+}
+.price p {
+    margin-left: 0.5rem;
+}
+.time{
+    display: flex;
+    align-items: center;
+}
+.time p{
+    margin-left: 0.5rem;
+}
+.creator-info{
+    display: flex;
+    align-items: center;
+}
+.photo{
+    width: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.name{
+    color: var(--white);
+}
+.name:hover{
+    color: var(--cyan);
+}
