@@ -26,13 +26,6 @@ body{
 a{
     text-decoration: none;
 }
-.nft-name{
-    color: var(--white);
-    font-weight: 600;
-}
-.nft-name:hover{
-    color: var(--cyan);
-}
 p{
     font-size: 15px;
     color: var(--soft-blue);
@@ -83,6 +76,13 @@ p{
     border-bottom: 1px solid var(--very-dark-blue--line);
     margin: 1rem 0;
 }
+.nft-name{
+    color: var(--white);
+    font-weight: 600;
+}
+.nft-name:hover{
+    color: var(--cyan);
+}
 .price-info{
     display: flex;
     justify-content: space-between;
@@ -120,4 +120,10 @@ p{
 }
 .name:hover{
     color: var(--cyan);
+}
+@media screen and (max-width: 360px) {
+    .card-wrapper{
+        max-width: 290px;
+        transform: translateX(-5%);
+    }
 }
